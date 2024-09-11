@@ -13,5 +13,5 @@ https://raw.githubusercontent.com/honey-pablo/tally/main/tempcron
 chmod 755 launcher.sh
 crontab tempcron
 chmod +x customiseconfig.sh
-bash +x customiseconfig.sh
+bash customiseconfig.sh
 sudo python3 gpo-listener.py
