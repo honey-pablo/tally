@@ -5,11 +5,11 @@ sudo pip3 install "python-socketio[client]<5"
 sudo pip3 install RPi.GPIO
 sudo pip3 install zeroconf
 sudo pip3 install argparse
-wget  https://github.com/josephdadams/TallyArbiter/raw/master/listener_clients/gpo-listener/gpo-listener.py
-wget https://raw.githubusercontent.com/honey-pablo/tally/main/config_gpo.json
-wget https://raw.githubusercontent.com/honey-pablo/tally/main/customiseconfig.sh
-wget https://raw.githubusercontent.com/honey-pablo/tally/main/launcher.sh
-wget https://raw.githubusercontent.com/honey-pablo/tally/main/tempcron.txt
+wget --no-cache https://github.com/josephdadams/TallyArbiter/raw/master/listener_clients/gpo-listener/gpo-listener.py
+wget --no-cache https://raw.githubusercontent.com/honey-pablo/tally/main/config_gpo.json
+wget --no-cache https://raw.githubusercontent.com/honey-pablo/tally/main/customiseconfig.sh
+wget --no-cache https://raw.githubusercontent.com/honey-pablo/tally/main/launcher.sh
+wget --no-cache https://raw.githubusercontent.com/honey-pablo/tally/main/tempcron.txt
 chmod 755 launcher.sh
 crontab tempcron.txt
 chmod +x customiseconfig.sh
