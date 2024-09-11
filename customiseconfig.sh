@@ -14,7 +14,7 @@ if echo "$ip_address" | grep -Eq '^([0-9]{1,3}\.){3}[0-9]{1,3}$'; then
     echo "IP address is valid."
 
     # Check if the config file contains 0.0.0.0
-    if grep -q "127.0.0.1" "$config_file"; then
+    if grep -q "0.0.0.0" "$config_file"; then
         # Replace occurrences of 0.0.0.0with the new IP address
         sed -i "s/0.0.0.0/$ip_address/g" "$config_file"
         echo "0.0.0.0 has been replaced with $ip_address in $config_file."
