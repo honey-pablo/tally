@@ -13,25 +13,25 @@ read -p "Please enter a name for this listener e.g. tally01: " name
 if echo "$ip_address" | grep -Eq '^([0-9]{1,3}\.){3}[0-9]{1,3}$'; then
     echo "IP address is valid."
 
-    # Check if the config file contains 127.0.0.1
+    # Check if the config file contains 0.0.0.0
     if grep -q "127.0.0.1" "$config_file"; then
-        # Replace occurrences of 127.0.0.1 with the new IP address
-        sed -i "s/127.0.0.1/$ip_address/g" "$config_file"
-        echo "127.0.0.1 has been replaced with $ip_address in $config_file."
+        # Replace occurrences of 0.0.0.0with the new IP address
+        sed -i "s/0.0.0.0/$ip_address/g" "$config_file"
+        echo "0.0.0.0 has been replaced with $ip_address in $config_file."
     else
-        # Append the IP address if 127.0.0.1 is not found
-        echo "127.0.0.1 not found in $config_file."
+        # Append the IP address if 0.0.0.0 is not found
+        echo "0.0.0.0 not found in $config_file."
         echo "ip_address=$ip_address" >> "$config_file"
         echo "New IP address has been added to $config_file."
     fi
 
     # Check if the config file contains ed34bacd
-    if grep -q "89b9f8c0-67c9-43a0-9927-66b85a2201f1" "$config_file"; then
-        # Replace occurrences of 89b9f8c0-67c9-43a0-9927-66b85a2201f1 with the new name
-        sed -i "s/89b9f8c0-67c9-43a0-9927-66b85a2201f1/$name/g" "$config_file"
-        echo "89b9f8c0-67c9-43a0-9927-66b85a2201f1 has been replaced with $name in $config_file."
+    if grep -q "replaceme" "$config_file"; then
+        # Replace occurrences of replaceme with the new name
+        sed -i "s/replaceme/$name/g" "$config_file"
+        echo "replaceme has been replaced with $name in $config_file."
     else
-        echo "89b9f8c0-67c9-43a0-9927-66b85a2201f1 not found in $config_file."
+        echo "replaceme not found in $config_file."
         echo "name=$name" >> "$config_file"
         echo "New name has been added to $config_file."
     fi
