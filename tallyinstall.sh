@@ -9,7 +9,7 @@ wget  https://github.com/josephdadams/TallyArbiter/raw/master/listener_clients/g
 wget https://raw.githubusercontent.com/honey-pablo/tally/main/config_gpo.json
 wget https://raw.githubusercontent.com/honey-pablo/tally/main/customiseconfig.sh
 wget https://raw.githubusercontent.com/honey-pablo/tally/main/launcher.sh
-https://raw.githubusercontent.com/honey-pablo/tally/main/tempcron
+https://raw.githubusercontent.com/honey-pablo/tally/main/tempcron.txt
 chmod 755 launcher.sh
 crontab tempcron
 chmod +x customiseconfig.sh
