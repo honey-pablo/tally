@@ -1,0 +1,42 @@
+    "output_invert": false,
+    "server_config": {
+        "ip": "0.0.0.0",
+        "port": 4455,
+        "use_mdns": false
+    },
+    "gpo_groups": [
+        {
+            "id": "1",
+            "gpos": [
+                {
+                    "pinNumber": 16,
+                    "busType": "preview",
+                    "lastState": false
+                },
+                {
+                    "pinNumber": 21,
+                    "busType": "program",
+                    "lastState": true
+                }
+            ],
+            "deviceId": "b1291585"
+        },
+        {
+            "id": "2",
+            "gpos": [
+                {
+                    "pinNumber": 11,
+                    "busType": "preview",
+                    "lastState": false
+                },
+                {
+                    "pinNumber": 12,
+                    "busType": "program",
+                    "lastState": false
+                }
+            ],
+            "deviceId": "b1291585"
+        }
+    ],
+    "clientUUID": "replaceme"
+}
