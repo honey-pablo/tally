@@ -1,4 +1,4 @@
-sudo apt-get update
+sudo apt-get update -y
 sudo apt-get install python3-pip
 sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED
 sudo pip3 install "python-socketio[client]<5"
