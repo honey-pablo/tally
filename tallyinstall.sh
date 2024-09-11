@@ -1,5 +1,5 @@
-sudo apt-get update -y
-sudo apt-get install python3-pip
+sudo apt-get -y update 
+sudo apt-get install -y python3-pip
 sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED
 sudo pip3 install "python-socketio[client]<5"
 sudo pip3 install RPi.GPIO
