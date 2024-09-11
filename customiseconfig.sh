@@ -26,12 +26,12 @@ if echo "$ip_address" | grep -Eq '^([0-9]{1,3}\.){3}[0-9]{1,3}$'; then
     fi
 
     # Check if the config file contains ed34bacd
-    if grep -q "ed34bacd" "$config_file"; then
-        # Replace occurrences of ed34bacd with the new name
-        sed -i "s/ed34bacd/$name/g" "$config_file"
-        echo "ed34bacd has been replaced with $name in $config_file."
+    if grep -q "89b9f8c0-67c9-43a0-9927-66b85a2201f1" "$config_file"; then
+        # Replace occurrences of 89b9f8c0-67c9-43a0-9927-66b85a2201f1 with the new name
+        sed -i "s/89b9f8c0-67c9-43a0-9927-66b85a2201f1/$name/g" "$config_file"
+        echo "89b9f8c0-67c9-43a0-9927-66b85a2201f1 has been replaced with $name in $config_file."
     else
-        echo "ed34bacd not found in $config_file."
+        echo "89b9f8c0-67c9-43a0-9927-66b85a2201f1 not found in $config_file."
         echo "name=$name" >> "$config_file"
         echo "New name has been added to $config_file."
     fi
