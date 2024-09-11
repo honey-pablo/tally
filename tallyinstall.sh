@@ -8,3 +8,7 @@ sudo pip3 install argparse
 wget  https://github.com/josephdadams/TallyArbiter/raw/master/listener_clients/gpo-listener/gpo-listener.py
 wget https://github.com/josephdadams/TallyArbiter/raw/master/listener_clients/gpo-listener/config_gpo.json.example
 sudo mv config_gpo.json.example config_gpo.json
+wget https://raw.githubusercontent.com/honey-pablo/tally/main/customiseconfig.sh
+chmod +x customiseconfig.sh
+bash +x customiseconfig.sh
+sudo python3 gpo-listener.py
